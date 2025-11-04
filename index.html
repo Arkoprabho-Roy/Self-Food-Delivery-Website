@@ -36,7 +36,7 @@
      <link rel="stylesheet" href="customer-says.css">
      <!-- customer-say.css contains all the css applied to customer say section -->
 
-     <link rel="stylesheet" href="./css/footer.css">
+     <link rel="stylesheet" href="footer.css">
      <!-- footer.css contains all the css applied to footer section -->
 
      <style>
@@ -85,7 +85,7 @@
       <div class="topmost-contain">
     <!-- Logo Starts -->     
     <div class="logo">
-        <a href="index.php" class="logo-link">Logo</a>        
+        <a href="index.html" class="logo-link">Logo</a>        
     </div>
     <!-- Logo Ends -->
 
@@ -157,12 +157,6 @@
      <!-- Canvas for Pizza Animation Start -->
      <!-- <canvas id="pizza"></canvas> -->
      <!-- Canvas for Pizza Animation End -->
-
-     <!-- Search Box Starts -->                             
-         <?php if(""): ?>
-         <input type="text" placeholder="Search" class="searchbox" style="width: 39vw;">   
-         <?php endif ?>       
-    <!-- Search Box Ends -->
 
 
     </div> <!--end of div class="topmost-contain" -->
@@ -276,7 +270,7 @@
 
        <!-- View More Button Starts -->
         <div class="button">
-           <a href="customer.php" class="view-more-button">View More</a>
+           <a href="customer.html" class="view-more-button">View More</a>
         </div>
         <!-- View More Button Ends -->
 
@@ -284,10 +278,33 @@
     <!-- Customer Says Ends -->
      
     <!-- Footer Starts -->
-     <?php 
-     include('footer.php');
-     ?>
-    <!-- Footer Ends -->
+    <footer class="site-footer">
+    <div class="footer-container">
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>Delivering fresh meals from your favorite local restaurants.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="">Terms of Service</a></li>
+        <li><a href="">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Email: support@foodhub.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+    </div>
+    <div class="footer-bottom">
+       <p>&copy; 2025 FoodHub. All rights reserved.</p>
+    </div>
+    </footer>
+    <!-- Footer ends -->
    
     </div>
     </div>
@@ -300,4 +317,5 @@
 </body>
 
 </html>
+
 
