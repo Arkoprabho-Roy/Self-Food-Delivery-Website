@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS Starts -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap  CSS Ends -->
+
+    <!-- Font Awesome Starts  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome Ends -->
+
+    <!-- Google Font Starts (Linking Roboto and Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Google Font Ends -->
+
+    <!-- Own CSS Starts -->
+
+     <link rel="stylesheet" href="./css/style.css">  
+     <!--style.css contains the overall css that applies everywhere throughout the website, like the global css under '*', the css for body tag, css for the logo, the .root section where css variables are declared and so on-->
+
+     <link rel="stylesheet" href="./css/navbar.css">
+     <!-- navbar.css contains all the css that are applied to the navbar -->
+
+     <link rel="stylesheet" href="footer.css">
+
+     <style> 
+     *
+     {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     :root
+    {
+    /* --logo-color: rgb(82, 174, 235); */
+    --logo-color: rgb(92, 182, 243);     
+    --primary-color:#FBFBFB; 
+    --secondary-color:#E8F9FF;
+    --tertiary-color:#C4D9FF;
+    --quaternary-color:#C5BAFF;  
+    }     
+    body
+    {
+        background: linear-gradient(var(--primary-color));
+    }
+    .contain 
+    {
+        background: linear-gradient(var(--primary-color), var(--secondary-color));
+    }
+     form label
+     {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        color: var(--logo-color);
+     }
+     form input
+     {
+        width: 20.8vw;
+        height: 2.5vw;
+        border-radius: 18px;
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: center;
+        font-size: 1.4vw;
+        border-width: 1px;
+     }
+     .profile-div 
+     {
+        border-radius: 12px;
+        width: 30%;
+        margin: auto;
+        background:linear-gradient(var(--secondary-color), var(--tertiary-color));
+        /* margin-top: 3vw; */
+        box-shadow: 0.6vw 0.6vw 0.6vw var(--tertiary-color);   
+     }
+     .site-footer 
+     {
+       background: linear-gradient(var(--secondary-color), var(--tertiary-color));
+     }
+     .navbar-contain nav
+      {
+        background: linear-gradient(var(--primary-color));
+      }
+     </style>
+
+     <!-- Own CSS Ends -->
+
+    <title>Document</title>    
+</head>
+<body>
+    <div class="topmost-contain">
+    <!-- Logo Starts -->     
+    <div class="logo">
+        <a href="index.php" class="logo-link">Logo</a>        
+    </div>
+    <!-- Logo Ends -->
+
+     <?php 
+      include('navbar.php');
+     ?>
+
+     <!-- Search Box Starts -->                             
+         <?php if(""): ?>
+         <input type="text" placeholder="Search" class="searchbox" style="width: 39vw;">   
+         <?php endif ?>
+      <!-- Search Box Ends -->
+
+
+    </div> <!--end of div class="topmost-contain" -->
+   
+    <!-- Body after NavBar Starts -->
+    <div class="contain">
+    <div class="profile-div" class="container-fluid">
+     <form action="" method="POST" style="text-align: center;">
+        <div>
+        <label>Name : </label>
+        </div>
+        <div>
+            <input type="text" placeholder="Enter Your Full Name " name="fullname" required>
+        </div>
+        <div>
+        <label>Email : </label>
+        </div>
+        <div>
+            <input type="text" placeholder="Enter Your Email " name="email" required>
+        </div>
+        <div>
+        <label>Password : </label>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter Your Password " name="password" required>
+        </div>
+        <div>
+        <label>Confirm Password : </label>
+        </div>
+        <div>
+            <input type="password" placeholder="Confirm Your Password " name="cpassword" required>
+        </div>
+        <div>
+        <label>Phone No. : </label>
+        </div>
+        <div>
+            <input type="number" placeholder="Enter Your Phone No. " name="phone" required>
+        </div>
+        <div>
+            <button type="submit" name="register-customer" class="btn btn-success mt-4 mb-3">Register</button>
+        </div>
+     </form>
+     </div>     
+     </div>    
+     
+     <!-- Footer Starts -->
+    <footer class="site-footer">
+    <div class="footer-container">
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>Delivering fresh meals from your favorite local restaurants.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="">Terms of Service</a></li>
+        <li><a href="">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Email: support@foodhub.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+    </div>
+    <div class="footer-bottom">
+       <p>&copy; 2025 FoodHub. All rights reserved.</p>
+    </div>
+    </footer>
+    <!-- Footer ends -->
+
+     <!-- Body after NavBar Ends -->     
+
+     <!-- Bootstrap JS Starts -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Ends -->
+
+</body>
+</html>

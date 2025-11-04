@@ -1,0 +1,61 @@
+:root
+{
+    /* --logo-color: rgb(82, 174, 235); */
+    --logo-color: rgb(92, 182, 243);     
+    --primary-color:#FBFBFB; 
+    --secondary-color:#E8F9FF;
+    --tertiary-color:#C4D9FF;
+    --quaternary-color:#C5BAFF;  
+}
+.hero-div
+{
+    background-color: var(--primary-color);   
+    display: grid !important;
+    grid-template-columns: 45vw 1fr !important;    
+}
+.hero-text
+{
+    background: linear-gradient(90deg, var(--primary-color), white, var(--primary-color), var(--tertiary-color));
+    /* box-shadow: 5px 5px 5px var(--quaternary-color); */
+}
+.hero-text h2
+{
+    font-size: 2.6vw;
+    line-height: 3.2vw;
+    margin-top: 9vw;
+    margin-left: 4.1vw;
+    font-family: "Poppins";
+}
+.hero-text p
+{
+    font-size: 1.8vw;
+    margin-left: 4vw;
+}
+.hero-text-div
+{
+    line-height: 2.1vw;
+    margin-top: 1.9vw;
+    color: gray;
+}
+.hero-text-div h1
+{
+    line-height: 3.6vw;
+    color: black;
+    font-size: 3vw;
+    font-family: "Poppins";
+    margin-left: 4vw;
+}
+.view-more-button1, .view-more-button1:hover
+{
+    /* cursor: pointer; */
+    background-color: var(--quaternary-color);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-radius: 3vw;
+    height: 3.6vw;
+    width: 30vw;
+}

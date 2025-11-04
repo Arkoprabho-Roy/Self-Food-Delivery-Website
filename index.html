@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS Starts -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap  CSS Ends -->
+
+    <!-- Font Awesome Starts  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome Ends -->
+
+    <!-- Google Font Starts (Linking Roboto and Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Google Font Ends -->
+
+    <!-- Own CSS Starts -->
+
+     <link rel="stylesheet" href="./css/style.css">  
+     <!--style.css contains the overall css that applies everywhere throughout the website, like the global css under '*', the css for body tag, css for the logo, the .root section where css variables are declared and so on-->
+
+     <link rel="stylesheet" href="hero.css">
+     <!-- hero.css contains all the css applied to hero section -->
+
+     <link rel="stylesheet" href="why-we.css">
+     <!-- why-we.css contains all the css applied to why we section -->
+
+     <link rel="stylesheet" href="customer-says.css">
+     <!-- customer-say.css contains all the css applied to customer say section -->
+
+     <link rel="stylesheet" href="./css/footer.css">
+     <!-- footer.css contains all the css applied to footer section -->
+
+     <style>
+      .topmost-contain
+      {
+        background: linear-gradient(white, var(--primary-color));
+      }
+      .navbar-contain nav
+      {
+        background: linear-gradient(white, var(--primary-color));
+      }
+      .hero-text 
+      {
+         border-radius: 125vw;
+      }
+      .door-text h1
+      {
+         font-family: "Poppins";
+      }
+      
+      .foot
+      {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;    
+        /*background: linear-gradient(white,var(--tertiary-color)); */
+        /*background-color: var(--primary-color);   */
+        background: linear-gradient(var(--primary-color), var(--tertiary-color));
+      }
+      .f1 a
+      {
+        text-decoration: none;
+        color: black;
+      }
+     </style>
+
+    <!-- Own CSS Ends-->
+    <title>Order Your Favourite Food</title>
+
+    <!-- <script>
+      alert("Open the NavBar (Three line menu) to view Search-Box if you cannot see any Search-Box");
+    </script> -->
+</head>
+<body>
+    <div class="main-contain">  <!-- Contains whole Landing Page-->
+
+      <div class="topmost-contain">
+    <!-- Logo Starts -->     
+    <div class="logo">
+        <a href="index.php" class="logo-link">Logo</a>        
+    </div>
+    <!-- Logo Ends -->
+
+     <?php 
+      include('navbar.php');
+     ?>
+
+     <!-- Canvas for Pizza Animation Start -->
+     <!-- <canvas id="pizza"></canvas> -->
+     <!-- Canvas for Pizza Animation End -->
+
+     <!-- Search Box Starts -->                             
+         <?php if(""): ?>
+         <input type="text" placeholder="Search" class="searchbox" style="width: 39vw;">   
+         <?php endif ?>       
+    <!-- Search Box Ends -->
+
+
+    </div> <!--end of div class="topmost-contain" -->
+    
+    <div class="container-fluid first-contain">  <!--Contains rest of the Landing Page except Logo and NavBar--> 
+     
+    <!-- Hero Starts -->
+     
+      <div class="hero-div">
+         <div class="vector-image-contain">
+            <img src="./images/food.jpg">            
+         </div>
+         <div class="hero-text">
+            <h2 style="color: var(--logo-color)"> 
+               From Local Favorites to Global Cuisines, Delivered to Your<br> Doorstep. Order now!
+            </h2>
+            <div class="hero-text-div">
+              <p>No additional delivery charge required. Freely enjoy your meals</p>
+              <div>
+              <h1 style="color: var(--quaternary-color)">
+                Get 50% discount for each order
+              </h1>
+              </div>
+              <div>
+                <p style="margin-left: 4vw;">Create an account and Start Ordering Food</p>
+              </div>  
+              <div style="text-align: left; margin-bottom: 4vw; margin-left: 4vw">               
+               <a href="register-customer.php" class="view-more-button1">Create Account</a>
+              </div>
+            </div>
+         </div>
+      </div>
+     
+    <!-- Hero Ends -->
+
+    <!-- Why We Starts -->
+     <div class="why-div">  <!--Contains the why-grid div of 800px width-->
+      <div class="why-grid">
+         <div class="restaurant">          
+            <p class="num1">500 +</p>
+            <p class="text1">Restaurants</p>                        
+       </div>
+       <div class="cities">         
+            <p class="num2">75 +</p>
+            <p class="text2">Cities</p>                
+       </div>
+       <div class="orders">          
+            <p class="num3">3,000 +</p>
+            <p class="text3">Orders Delivered</p>                    
+       </div>
+       <div class="trust">         
+            <p class="num4">Trusted by</p>
+            <p class="text4">Millions of Users</p>                     
+       </div>
+      </div>  
+      </div>
+      
+      <div class="why-grid1"> <!--Another part of why we section (below why-div), it deals with food delivery-->
+         <div class="door-text" style="font-family: 'Poppins';">
+            <h1 style="font-size: 2.7vw; color: var(--quaternary-color)" >
+              Free Delivery 
+            </h1>
+            <p class="test" style="font-size: 1.6vw; color:gray">Order delicious meals from local restaurants with fast, reliable delivery. Enjoy fresh food at your doorstep, exclusive deals & easy tracking. Seamless Ordering, Swift Delivery. Enjoy Restaurant-Quality Meals in the Comfort of Your Home.</p>
+            <h2 style="color: var(--quaternary-color)">
+              Quick and Safe Food Delivery at Your Doorstep
+            </h2>            
+         </div>
+         <div>
+            <img src="./images/food-delivery.jpg" class="">
+         </div>
+      </div>
+      
+    <!-- Why We Ends -->
+
+    <!-- Customer Says Starts -->
+    <div class="customer-says"> 
+
+      <h1 class="customer-say-title" style="font-family: 'Poppins';">What  Our Customers Say About Us </h1> 
+      <div class="review">
+        <div class="review1">          
+           <h3>Andrew Gayle</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Absolutely love the wide variety of restaurants available! Ordered dinner for my family of four, and the delivery was right on time. The food arrived hot, and the tracking feature kept me updated throughout. Highly recommend!"</p>
+        </div>
+        <div class="review2">
+           <h3>Michael Watson</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Great service overall. The app is user-friendly, and customer support helped resolve a minor issue quickly. Only reason for 4 stars is that I wish there were more filter options for dietary restrictions."</p>
+        </div>
+        <div class="review3">
+           <h3>John Smith</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"As a busy professional, this service has been a lifesaver. The scheduled delivery option lets me plan meals ahead, and the drivers are always courteous. Love the real-time tracking feature!"</p>
+        </div>
+        <div class="review4">
+           <h3>Sarah Thompson</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"The delivery was lightning-fast, and my food arrived piping hot. The app is incredibly user-friendly, and the tracking feature kept me updated throughout. Definitely my go-to food delivery service now!"</p>
+        </div>
+        <div class="review5">
+           <h3>Michael Rodriguez</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Outstanding variety of restaurants to choose from! I appreciate how the dietary restrictions filter helps me find gluten-free options easily. The customer service team resolved my minor issue promptly."</p>
+        </div>
+        <div class="review6">
+           <h3>Robert Anderson</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Been using this service for six months now, and I'm consistently impressed. The food quality is maintained during delivery, and the prices are reasonable. Great loyalty rewards program too!"</p>
+        </div>
+      </div>  <!--End of div class="review"-->
+
+       <!-- View More Button Starts -->
+        <div class="button">
+           <a href="customer.php" class="view-more-button">View More</a>
+        </div>
+        <!-- View More Button Ends -->
+
+    </div>
+    <!-- Customer Says Ends -->
+     
+    <!-- Footer Starts -->
+     <?php 
+     include('footer.php');
+     ?>
+    <!-- Footer Ends -->
+   
+    </div>
+    </div>
+    <!-- <script src="pizza.js"></script> -->
+
+    <!-- Bootstrap JS Starts -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Ends -->
+
+</body>
+</html>

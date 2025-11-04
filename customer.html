@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS Starts -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap  CSS Ends -->
+
+    <!-- Font Awesome Starts  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome Ends -->
+
+    <!-- Google Font Starts (Linking Roboto and Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Google Font Ends -->
+
+    <!-- Own CSS Starts -->
+
+     <link rel="stylesheet" href="./css/style.css">  
+     <!--style.css contains the overall css that applies everywhere throughout the website, like the global css under '*', the css for body tag, css for the logo, the .root section where css variables are declared and so on-->
+
+     <link rel="stylesheet" href="./css/navbar.css">
+     <!-- navbar.css contains all the css that are applied to the navbar -->
+
+     <link rel="stylesheet" href="customer.css">
+     <!-- customer.css contains all css that are applied to the customer say section of this customer.html page where view more button is not present.  -->
+
+     <style>
+      .navbar-contain nav
+      {
+          background: linear-gradient(var(--primary-color), var(--secondary-color));
+      }
+     </style>
+
+    <title>Document</title>
+   
+</head>
+<body>
+    <div class="topmost-contain">
+    <!-- Logo Starts -->     
+    <div class="logo">
+        <a href="index.php" class="logo-link">Logo</a>        
+    </div>
+    <!-- Logo Ends -->
+
+     <?php 
+      include('navbar.php');
+     ?>
+
+     <!-- Search Box Starts -->                             
+         <?php if(""): ?>
+         <input type="text" placeholder="Search" class="searchbox" style="width: 39vw;">   
+         <?php endif ?>
+    <!-- Search Box Ends -->
+
+
+    </div> <!--end of div class="topmost-contain" -->
+
+    <!-- Customer Says Starts -->
+    <div class="customer-says">
+
+      <h1 class="customer-say-title" style="color: var(--logo-color);">What  Our Customers Say About Us </h1> 
+      <div class="review">
+        <div class="review1">          
+           <h3>Andrew Gayle</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Absolutely love the wide variety of restaurants available! Ordered dinner for my family of four, and the delivery was right on time. The food arrived hot, and the tracking feature kept me updated throughout. Highly recommend!"</p>
+        </div>
+        <div class="review2">
+           <h3>Michael Watson</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Great service overall. The app is user-friendly, and customer support helped resolve a minor issue quickly. Only reason for 4 stars is that I wish there were more filter options for dietary restrictions."</p>
+        </div>
+        <div class="review3">
+           <h3>John Smith</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"As a busy professional, this service has been a lifesaver. The scheduled delivery option lets me plan meals ahead, and the drivers are always courteous. Love the real-time tracking feature!"</p>
+        </div>
+        <div class="review4">
+           <h3>Sarah Thompson</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"The delivery was lightning-fast, and my food arrived piping hot. The app is incredibly user-friendly, and the tracking feature kept me updated throughout. Definitely my go-to food delivery service now!"</p>
+        </div>
+        <div class="review5">
+           <h3>Michael Rodriguez</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Outstanding variety of restaurants to choose from! I appreciate how the dietary restrictions filter helps me find gluten-free options easily. The customer service team resolved my minor issue promptly."</p>
+        </div>
+        <div class="review6">
+           <h3>Robert Anderson</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Been using this service for six months now, and I'm consistently impressed. The food quality is maintained during delivery, and the prices are reasonable. Great loyalty rewards program too!"</p>
+        </div>
+         <div class="review7">
+           <h3>David O'Connor</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"The website's interface is intuitive and makes ordering a breeze. I particularly enjoy the photo reviews from other customers, helping me make informed choices about my meals."</p>
+        </div>
+         <div class="review8">
+           <h3>Kevin Marshall</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Their customer support is exceptional! Had an issue with my order, and they resolved it immediately with a refund and discount on my next purchase. That's what I call great service!"</p>
+        </div>
+         <div class="review9">
+           <h3>Christopher Wong</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"What impresses me most is their commitment to food safety. Orders are properly sealed, temperature-maintained, and handled with care. The contactless delivery option shows they prioritize customer well-being."</p>
+        </div>
+         <div class="review10">
+           <h3>Marcus Henderson</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"Their partnership with premium restaurants ensures restaurant-quality meals at home. The website's sorting options make it easy to find exactly what I want within my preferred price range."</p>
+        </div>
+         <div class="review11">
+           <h3>Brandon Reynolds</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"As someone with dietary restrictions, I love how clearly allergen information is displayed. The filtering system helps me find suitable options quickly, and special instructions are always followed precisely."</p>
+        </div>
+         <div class="review12">
+           <h3>Nathan Collins</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"What sets them apart is their attention to detail. From careful packaging to following specific delivery instructions, they consistently exceed expectations. The drivers are always courteous."</p>
+        </div>
+        <div class="review13">
+           <h3>Samantha Winters</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"The late-night delivery service is reliable and safe. Drivers are professional, and the real-time tracking provides security. It's great having quality food options available around the clock."</p>
+        </div>
+        <div class="review14">
+           <h3>Emma Richardson</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"The weather-adaptive delivery system is brilliant. During rain, they provide realistic delivery estimates and extra packaging protection. Communication is always clear and proactive."</p>
+        </div>
+        <div class="review15">
+           <h3>Harold Hopkins</h3>
+           <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+           <p>"The multi-restaurant ordering feature is fantastic! I can order sushi for myself and pizza for the kids in one transaction. The consolidated delivery fee saves money, and everything arrives fresh. Their quality control is outstanding."</p>
+        </div>
+      </div>  <!--End of div class="review"-->       
+
+    </div>
+    <!-- Customer Says Ends -->
+
+    <!-- Footer Starts -->
+     <?php 
+     include('footer.php');
+     ?>
+    <!-- Footer Ends -->
+
+    </div> <!--end of div class="container-fluid main-contain"-->
+
+     <!-- Bootstrap JS Starts -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Ends -->
+
+ 
+</body>
+</html>

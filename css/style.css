@@ -1,0 +1,42 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    /* --logo-color: rgb(82, 174, 235); */
+    --logo-color: rgb(92, 182, 243);     
+    --primary-color:#FBFBFB; 
+    --secondary-color:#E8F9FF;
+    --tertiary-color:#C4D9FF;
+    --quaternary-color:#C5BAFF;  
+}
+body
+{
+    font-family: "Roboto" , sans-serif;   
+    /* background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));    */  
+      
+}
+.logo
+{
+    font-size: 32px;
+    display: inline-block;
+    margin-left: 1.7vw;    
+    margin-right: 4vw;        
+}
+.logo-link
+{
+    text-decoration: none;
+    color: var(--logo-color) !important;    
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+

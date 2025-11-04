@@ -1,0 +1,56 @@
+:root
+{
+    /* --logo-color: rgb(82, 174, 235); */
+    --logo-color: rgb(92, 182, 243);     
+    --primary-color:#FBFBFB; 
+    --secondary-color:#E8F9FF;
+    --tertiary-color:#C4D9FF;
+    --quaternary-color:#C5BAFF;  
+}
+.topmost-contain
+{
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+.customer-says
+{
+   background: linear-gradient(var(--secondary-color), var(--primary-color));
+   padding-bottom: 18px;
+}
+.customer-say-title
+{
+    text-align: center;
+    padding-top: 1vw;
+    margin-bottom: 2.1vw;
+}
+.review
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2vw;
+    column-gap: 1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+.review1, .review2, .review3, .review4, .review5, .review6, .review7, .review8, .review9, .review10, .review11, .review12, .review13, .review14, .review15
+{
+   border-color: var(--tertiary-color);
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 1.5vw;
+   box-shadow: 0.6vw 0.6vw 0.6vw var(--tertiary-color);   
+}
+.customer-says h3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 1.2vw;
+    font-size: 2vw;
+    color: var(--quaternary-color);
+}
+.customer-says p
+{
+    font-size: 1.5vw;
+    text-align: center;
+    color: rgb(114, 112, 112);
+    /* margin-bottom: 2.7vw; */
+}

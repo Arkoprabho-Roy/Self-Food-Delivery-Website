@@ -1,0 +1,43 @@
+.navbar-contain
+{
+    display: inline-block;
+    vertical-align: top;        
+}
+.searchbox
+{
+    display: inline-block;    
+    height: 30px;
+    width: 260px;   
+    border-top-right-radius: 1.2vw; 
+    border-bottom-right-radius: 1.2vw;  
+    padding-left: 0.7vw;   
+    border-color: gainsboro;     
+    border-style: solid;
+    border-width: 0.1vw;
+    margin-top: 0.7vw;
+    margin-left: 1vw;
+}
+.nav-link
+{
+    display: inline-block;
+}
+.icon
+{
+    margin-left: 0.8vw;    
+}
+ .you-logo
+ {
+    color: black;
+    margin-left: 1.5vw;
+    border-color: black;
+    border-style: solid;    
+    border-radius: 20px;    
+    width: 20px;    
+    text-align: center;
+ }
+ .home-logo, .icon
+ {
+    color: black;    
+ } 
+
+ 

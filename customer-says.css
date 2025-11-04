@@ -1,0 +1,73 @@
+:root
+{
+    /* --logo-color: rgb(82, 174, 235); */
+    --logo-color: rgb(92, 182, 243);     
+    --primary-color:#FBFBFB; 
+    --secondary-color:#E8F9FF;
+    --tertiary-color:#C4D9FF;
+    --quaternary-color:#C5BAFF;   
+}
+.customer-says
+{
+   background: linear-gradient(var(--secondary-color), var(--primary-color));
+   padding-bottom: 18px;
+}
+.customer-say-title
+{
+    text-align: center;
+    padding-top: 1vw;
+    margin-bottom: 2.1vw;
+    color: var(--logo-color);
+}
+.review
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1vw;
+    column-gap: 1vw;
+}
+.review1, .review2, .review3, .review4, .review5, .review6
+{
+   border-color: var(--tertiary-color);
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 1.5vw;
+   box-shadow: 0.6vw 0.6vw 0.6vw var(--tertiary-color);
+   padding-bottom: 2vw;
+}
+.customer-says h3
+{
+    text-align: center;
+    margin-top: 2.1vw;
+    margin-bottom: 1.8vw;
+    font-size: 2vw;
+    color: var(--quaternary-color);
+}
+.customer-says p
+{
+    font-size: 1.5vw;
+    text-align: center;
+    color: rgb(114, 112, 112);
+    /* margin-bottom: 2.7vw; */
+}
+.button
+{
+    text-align: center;
+    padding-top: 2vw;
+}
+.view-more-button, .view-more-button:hover
+{
+    cursor: pointer;
+    background-color: var(--quaternary-color);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.view-more-button:hover
+{
+    padding-left: 3vw;
+    padding-right: 3vw;
+} 

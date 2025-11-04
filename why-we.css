@@ -1,0 +1,84 @@
+:root
+{
+    /* --logo-color: rgb(82, 174, 235); */
+    --logo-color: rgb(92, 182, 243);     
+    --primary-color:#FBFBFB; 
+    --secondary-color:#E8F9FF;
+    --tertiary-color:#C4D9FF;
+    --quaternary-color:#C5BAFF;  
+}
+.why-div
+{
+    background: linear-gradient(white, var(--primary-color), var(--secondary-color));    
+}
+.why-grid
+{
+    display: grid;
+    grid-template-columns: 14vw 14vw 17vw 19vw;    
+    width: 65vw; 
+    margin: auto;  
+    background: linear-gradient(white, var(--primary-color), var(--secondary-color)); 
+    padding-top: 1.3vw;
+    padding-left: 0.9vw;
+    border-radius: 1vw;    
+}
+.why-grid p
+{
+    line-height: 1vw;
+}
+.num1, .num2, .num3
+{
+    font-size: 3.4vw;
+    color: gray;
+    font-weight: bold;
+}
+.text1, .text2, .text3
+{
+    font-size: 2.2vw;
+    color: grey;
+    margin-top: 2.4vw;
+}
+.trust
+{
+    padding-left: 1vw;
+}
+.num4
+{
+    font-size: 3.4vw;
+    color: gray;
+    font-weight: bold;
+}
+.text4
+{
+    font-size: 2.2vw;
+    color: grey;
+    margin-top: 2.4vw;
+}
+.why-grid1
+{
+    background-color: var(--secondary-color);     
+    display: grid;
+    grid-template-columns: 45vw 1fr;    
+       
+}
+.why-grid1 h1
+{
+    margin-top: 11.8vw;    
+    font-size: 3.5vw;
+}
+.why-grid1 h2
+{
+    font-size: 2.8vw;    
+}
+.test
+{
+    color: rgb(91, 91, 91); 
+    font-size: 1.7vw;
+}
+.door-text
+{
+    padding-left: 1.9vw;
+    /* background-color: aqua; */
+}
+
+ 
