@@ -26,6 +26,8 @@
      <link rel="stylesheet" href="./css/navbar.css">
      <!-- navbar.css contains all the css that are applied to the navbar -->
 
+    <link rel="stylesheet" href="footer.css">
+
      <link rel="stylesheet" href="./css/profile.css">
      <!-- profile.css contains all the css that are applied to the body of profile.html page following the navbar, starting with the marquee tag -->
 
@@ -45,7 +47,7 @@
     <div class="topmost-contain">
     <!-- Logo Starts -->     
     <div class="logo">
-        <a href="index.php" class="logo-link">Logo</a>        
+        <a href="index.html" class="logo-link">Logo</a>        
     </div>
     <!-- Logo Ends -->
 
@@ -124,10 +126,33 @@
      </div>
 
      <!-- Footer Starts -->
-     <?php 
-     include('footer.php');
-     ?>
-    <!-- Footer Ends -->
+    <footer class="site-footer">
+    <div class="footer-container">
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>Delivering fresh meals from your favorite local restaurants.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="">Terms of Service</a></li>
+        <li><a href="">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Email: support@foodhub.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+    </div>
+    <div class="footer-bottom">
+       <p>&copy; 2025 FoodHub. All rights reserved.</p>
+    </div>
+    </footer>
+    <!-- Footer ends -->
         
      <!-- Body after NavBar Ends -->     
 
@@ -138,3 +163,4 @@
 </body>
 
 </html>
+
